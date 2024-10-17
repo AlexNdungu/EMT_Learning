@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+.new_task_menu {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #EFEFEF;
+    padding-right: 20px;
+}
+
+
+.add_task_btn {
+    width: max-content;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #414141;
+    color: #EFEFEF;
+    fill: #EFEFEF;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.add_task_btn:hover {
+    background-color: #406CEE;
+}
+
+.add_task_btn svg {
+    width: 22px;
+    margin-left: 10px;
+}
+
+.show_logged_in_user {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #414141;
+    color: #EFEFEF;
+    fill: #EFEFEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.show_logged_in_user span {
+    pointer-events: none;
+}
+
+.show_logged_in_user svg {
+    width: 20px;
+    pointer-events: none;
+}
+
+.show_logged_in_user:hover {
+    background-color: #406CEE;
+}

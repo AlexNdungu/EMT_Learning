@@ -47,3 +47,9 @@ def signInUser(request):
 def signOut(request):  
     logout(request)
     return redirect('login')
+
+def Menu(request):
+    return render(request,'menu.html')
+
+def Course(request):
+    return render(request,'Teacher/course.html')
