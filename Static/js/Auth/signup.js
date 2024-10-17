@@ -68,7 +68,7 @@ function create_new_user(){
                 new Alert.Alert('error','User Already Exists!',alert_time,alert_section);
            }
             else if(response.status == 'created'){
-                window.location.href = "/newTask";
+                window.location.href = "/Course";
             }
         },
         error: function(error){

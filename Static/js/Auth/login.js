@@ -33,7 +33,7 @@ function login_user(){
                 new Alert.Alert('error','Wrong Password. Try Again!',alert_time,alert_section);
             }
             else if(response.status == 'found'){
-                window.location.href = "/newTask";
+                window.location.href = "/admin";
             }
         },
         error: function(error){
