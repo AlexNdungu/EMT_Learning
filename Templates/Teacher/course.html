@@ -13,6 +13,9 @@
             </div>
         </div>
         <div class="create_and_update_course_section">
+            <form >
+                {% csrf_token %}
+            </form>
             <div class="create_course_add">
                 <input type="text" id="course_name" placeholder="Type Course Name">
                 <input type="file" id="files" name="files" multiple>
