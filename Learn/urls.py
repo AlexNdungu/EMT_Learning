@@ -10,4 +10,5 @@ urlpatterns = [
 
     path('menu/',views.Menu,name='menu'),
     path('Course/',views.Course,name='teacher_course'),
+    path('createcourse/',views.CreateCourse,name='Create_course_url')
 ]

@@ -9,8 +9,9 @@ let csrf = document.getElementsByName('csrfmiddlewaretoken');
 function upload_course(){
     let formData = new FormData();
     formData.append('csrfmiddlewaretoken', csrf[0].value);
-    formData.append('course_name',files);
+    formData.append('course_name',course_name.value);
     formData.append('documents',all_files.files);
+    console.log(all_files.files)
     $.ajax({
         type:'POST',
         url:'/createcourse/',

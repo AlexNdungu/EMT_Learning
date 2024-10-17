@@ -64,3 +64,11 @@ def Menu(request):
 
 def Course(request):
     return render(request,'Teacher/course.html')
+
+def CreateCourse(request):
+    if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+        course_name = request.POST.get('course_name')
+        course_file = request.FILES.get('documents')
+
+        print(course_name)
+        print(course_file)
