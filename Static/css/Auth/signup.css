@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+.sign_main_section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign_section_animation,.sign_section_form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sign_section_animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px;
+}
+
+.signup_heading {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.signup_heading {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #414141;
+}
+
+.signup_form_input_section {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_form_input_section_email{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup_form_input_section_email input{
+    width: 350px;
+    height: 40px;
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+    color: #406CEE;
+}
+
+.signup_form_input {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    padding-right: 5px;
+}
+
+.signup_form_input input {
+    width: calc(100% - 50px);
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding-left: 10px;
+    font-size: 17px;
+    color: #406CEE;
+}
+
+.signup_form_input_show_pass {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #414141;
+    fill: #EFEFEF;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.signup_form_input_show_pass:hover {
+    background-color: #406CEE;
+    fill: #EFEFEF;
+}
+
+.signup_form_input_show_pass svg {
+    width: 20px;
+}
+
+.create_user_btn {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #414141;
+    color: #EFEFEF;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.create_user_btn:hover {
+    background-color: #406CEE;
+}
+
+.signup_form_input_section_have_acc {
+    font-size: 17px;
+}
+
+.signup_form_input_section_have_acc span {
+    color: #414141;
+    margin-right: 6px;
+}
+
+.signup_form_input_section_have_acc a {
+    color: #406CEE;
+}
