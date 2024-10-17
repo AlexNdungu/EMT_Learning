@@ -1,3 +1,4 @@
 Learn/__pycache__/*
 Learn/migrations/__pycache__/*
 EMT_Learning/__pycache__/*
+Learn/secret.py
