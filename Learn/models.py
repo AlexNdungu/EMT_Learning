@@ -30,3 +30,11 @@ class Course(models.Model):
     created = models.DateField(auto_now_add=True)
     def __str__(self):
         return self.course_name
+    
+class CourseFiles(models.Model):
+    course =  models.ForeignKey(Course, on_delete=models.CASCADE, verbose_name='Couse',related_name='Course')
+    file_id = models.AutoField(primary_key=True)
+    #document_name = models.CharField(max_length=50,default='CoFileurse Name',verbose_name='File Name')
+    document = models.FileField(upload_to='Documents')
+    # def __str__(self):
+    #     return self.document_name
