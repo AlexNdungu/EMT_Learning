@@ -9,6 +9,8 @@ let pass_1 = document.getElementById('pass_1');
 let pass_2 = document.getElementById('pass_2');
 let csrf = document.getElementsByName('csrfmiddlewaretoken');
 let choosen_user = document.getElementById('choosen_user');
+let choose_check_box_containers = document.getElementsByClassName('choose_check_box_container');
+let choose_check_boxs = document.getElementsByClassName('choose_check_box');
 const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const lengthRegex = /.{8,}/; 
 const uppercaseRegex = /[A-Z]/;
@@ -33,6 +35,21 @@ function show_password(input,button_svg){
         button_svg.innerHTML = open_eye_component;
     }
 };
+
+for (let i = 0; i < choose_check_box_containers.length; i++) {
+    choose_check_box_containers[i].addEventListener('click',()=> {
+        if(i == 0){
+            choose_check_boxs[0].style.display = 'block';
+            choose_check_boxs[1].style.display = 'none';
+            choosen_user.value = 'student';
+        }
+        else if(i == 1){
+            choose_check_boxs[0].style.display = 'none';
+            choose_check_boxs[1].style.display = 'block';
+            choosen_user.value = 'teacher';
+        }
+    });
+}
 
 function create_new_user(){
     let formData = new FormData();
