@@ -149,3 +149,46 @@
 .signup_form_input_section_have_acc a {
     color: #406CEE;
 }
+
+.choose_user_group {
+    width: 350px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.choose_user_group span{
+    color: #414141;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.user_instuctions {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.choose_check_box_container {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #414141;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.choose_check_box_container:hover {
+    border: 2px solid #406CEE;
+}
+
+.choose_check_box {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    display: none;
+    background-color: #406CEE;
+}
