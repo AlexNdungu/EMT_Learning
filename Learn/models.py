@@ -22,10 +22,10 @@ class Profile(models.Model):
 class Course(models.Model):
     course_id = models.AutoField(primary_key=True)
     course_name = models.CharField(max_length=50,default='Course Name',verbose_name='Course Name')
-    creator = models.OneToOneField(Profile, on_delete=models.CASCADE)
+    creator = models.ForeignKey(Profile, on_delete=models.CASCADE,verbose_name='Course Owner')
     approval_status = models.BooleanField(default=False)
-    students_enrolled = models.ManyToManyField(Profile, blank=True,null=True,related_name='all_students_enrolled')
-    students_enrolled_but_completed = models.ManyToManyField(Profile, blank=True,null=True,related_name='all_students_completed_course')
+    students_enrolled = models.ManyToManyField(Profile, blank=True,related_name='all_students_enrolled')
+    students_enrolled_but_completed = models.ManyToManyField(Profile, blank=True,related_name='all_students_completed_course')
     update = models.DateTimeField(auto_now=True)
     created = models.DateField(auto_now_add=True)
     def __str__(self):
