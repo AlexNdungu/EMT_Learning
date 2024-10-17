@@ -5,6 +5,9 @@ let course_name = document.getElementById('course_name');
 let all_files = document.getElementById('files');
 let create_course = document.getElementById('create_course');
 let csrf = document.getElementsByName('csrfmiddlewaretoken');
+let add_task_btn = document.getElementById('add_task_btn');
+let create_course_section = document.getElementById('create_course_section');
+let close_crud_button = document.getElementById('close_crud_button');
 
 function upload_course(){
     let formData = new FormData();
@@ -25,6 +28,14 @@ function upload_course(){
         }
     });
 }
+
+add_task_btn.addEventListener('click',()=> {
+    create_course_section.style.display = 'block';
+});
+
+close_crud_button.addEventListener('click',()=>{
+    create_course_section.style.display = 'none';
+});
 
 create_course.addEventListener('click',()=>{
     upload_course()
