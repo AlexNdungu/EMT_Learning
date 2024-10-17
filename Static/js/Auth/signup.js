@@ -56,6 +56,7 @@ function create_new_user(){
     formData.append('csrfmiddlewaretoken', csrf[0].value);
     formData.append('email',email_signup_input.value);
     formData.append('password',pass_1.value);
+    formData.append('role',choosen_user.value);
     $.ajax({
         type:'POST',
         url:'/createNewUser/',

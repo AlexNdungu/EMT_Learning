@@ -14,6 +14,7 @@ class Profile(models.Model):
     profile_id = models.AutoField(primary_key=True)
     user_roles = models.CharField(max_length=15, choices=user_role, default='none')
     full_name = models.CharField(max_length=50, verbose_name='Full Name')
+    email = models.URLField(max_length = 200, verbose_name='Email', default='Email')
     update = models.DateTimeField(auto_now=True)
     created = models.DateField(auto_now_add=True)
     def __str__(self):
