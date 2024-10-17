@@ -1,0 +1,113 @@
+.all_courses_section {
+    height: calc(100vh - 60px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.individual_course_section {
+    width: 400px;
+    height: 245px;
+    border-radius: 10px;
+    background-color: #ACACAC;
+}
+
+.course_cover_section {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #EFEFEF;
+}
+
+.course_cover_section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.status_approval {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: max-content;
+    height: 35px;
+    background-color: #ACACAC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: 600;
+    color: #414141;
+}
+
+.course_name {
+    width: calc(100% - 10px);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    color: #414141;
+    background-color: #EFEFEF;
+}
+
+.course_date_button {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.course_date {
+    width: max-content;
+    height: 40px;
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #406CEE;
+}
+
+.course_controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course_update,.course_delete {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF;
+    margin-left: 10px;
+    border-radius: 5px;
+    fill: #414141;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.course_update:hover {
+    fill: #406CEE;
+}
+
+.course_delete:hover {
+    fill: #C53B3B;
+}
+
+.course_update svg,.course_delete svg {
+    width: 20px;
+}
