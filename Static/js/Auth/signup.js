@@ -8,6 +8,7 @@ let email_signup_input = document.getElementById('email_signup_input')
 let pass_1 = document.getElementById('pass_1');
 let pass_2 = document.getElementById('pass_2');
 let csrf = document.getElementsByName('csrfmiddlewaretoken');
+let choosen_user = document.getElementById('choosen_user');
 const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const lengthRegex = /.{8,}/; 
 const uppercaseRegex = /[A-Z]/;
@@ -58,6 +59,15 @@ function create_new_user(){
     });    
 }
 
+function check_choosen_user_group(){
+    if(choosen_user.value == ''){
+        new Alert.Alert('error','Kindly Choose The Role!',alert_time,alert_section);
+    }
+    else{
+        create_new_user();
+    }
+}
+
 function check_password_strength(pass1){
     if(!lengthRegex.test(pass1.value)){
         new Alert.Alert('error','Password Is Too Short!',alert_time,alert_section);
@@ -66,7 +76,7 @@ function check_password_strength(pass1){
         new Alert.Alert('error','Require Atleast One (UpperCase, LowerCase, Number, Special Character)!',alert_time,alert_section);
     }
     else{
-        create_new_user();
+        check_choosen_user_group();
     }
 }
 

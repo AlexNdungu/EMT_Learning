@@ -169,6 +169,10 @@
     font-weight: 600;
 }
 
+#choosen_user {
+    display: none;
+}
+
 .choose_check_box_container {
     width: 15px;
     height: 15px;
