@@ -2,8 +2,9 @@
     height: calc(100vh - 60px);
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
 }
 
 .individual_course_section {
@@ -110,4 +111,45 @@
 
 .course_update svg,.course_delete svg {
     width: 20px;
+}
+
+.create_course_section {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(29, 29, 29, 0.4)
+}
+
+.crud_close_section {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.close_crud_button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    fill: #C53B3B;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.close_crud_button:hover {
+    background-color: #C53B3B;
+    fill: #EFEFEF;
+}
+
+.close_crud_button svg {
+    width: 30px;
 }
